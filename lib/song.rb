@@ -43,9 +43,9 @@ class Song
 
   def self.artist_count
     artist_hash = {}
-    @@artists.each do |word|
+    @@artists.each do |element|
       # binding.pry
-      endartist_hash[word] = 1
+    artist_hash[element] = 1
     end
     return artist_hash
   end
