@@ -28,18 +28,18 @@ class Song
     return @@genres.uniq
   end
 
-  # def self.genre_count
-  #   genre_hash = {}
-  #   @@genres.each do |word|
-  #     # binding.pry
-  #     if genre_hash[word]
-  #       genre_hash[word] += 1
-  #     else
-  #       genre_hash[word]
-  #     end
-  #   end
-  #   return genre_hash
-  # end
+  def self.genre_count
+    genre_hash = {}
+    @@genres.each do |element|
+      # binding.pry
+      if genre_hash[element] == nil
+        genre_hash[element] = 1
+      else
+        genre_hash[element] += 1
+      end
+    end
+    return genre_hash
+  end
 
   def self.artist_count
     artist_hash = {}
