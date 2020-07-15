@@ -48,7 +48,7 @@ class Song
       if artist_hash[element] == nil
         artist_hash[element] = 1
       else
-        artist_hash[element] = artist_hash[element].count + 1
+        artist_hash[element] += 1
       end
     end
     return artist_hash
