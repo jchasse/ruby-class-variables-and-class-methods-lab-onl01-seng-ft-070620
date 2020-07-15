@@ -45,7 +45,10 @@ class Song
     artist_hash = {}
     @@artists.each do |element|
       binding.pry
-    artist_hash[element] = 1
+      if artist_hash[element] = nil
+        artist_hash[element] = 1
+      else
+        artist_hash[element] += 1
     end
     return artist_hash
   end
