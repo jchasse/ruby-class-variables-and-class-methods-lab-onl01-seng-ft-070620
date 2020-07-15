@@ -49,6 +49,7 @@ class Song
         artist_hash[element] = 1
       else
         artist_hash[element] += 1
+      end
     end
     return artist_hash
   end
